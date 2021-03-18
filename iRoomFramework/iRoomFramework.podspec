@@ -12,14 +12,14 @@ Pod::Spec.new do |spec|
   spec.version      = "0.0.1"
   spec.summary      = "iRoomFramework for the Models"
   spec.description  = <<-DESC
-    iRoomFramework for the Models
+    Models necessary for the api calls and Specific b logic.
                    DESC
-  spec.homepage     = "https://github.com/ibilikstar/iRoomFramework"
+  spec.homepage     = "https://ibilik.my/"
   spec.license      = "MIT"
   spec.author             = { "ibilik hafiz" => "ibilikstarproperty@gmail.com" }
-  spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "9.0"
 
   spec.source       = { :git => "https://ibilikstar@github.com/ibilikstar/iRoomFramework.git", :tag => "0.0.1" }
-  spec.source_files  = "iRoomFramework"
-
+  spec.source_files  = "iRoomFramework/**/*{.h,.swift}"
+  spec.swift_version = '5.0'
 end

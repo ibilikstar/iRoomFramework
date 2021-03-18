@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DA502C9826020954004D257F /* iRoomFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DA502C9626020954004D257F /* iRoomFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA502CA0260209BB004D257F /* RoomChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA502C9F260209BB004D257F /* RoomChecker.swift */; };
+		DA502D0D260320C8004D257F /* Chat in Resources */ = {isa = PBXBuildFile; fileRef = DA502D0C260320C8004D257F /* Chat */; };
+		DA502D12260321A7004D257F /* PropertyDraftPreview in Resources */ = {isa = PBXBuildFile; fileRef = DA502D11260321A7004D257F /* PropertyDraftPreview */; };
+		DA502D2F260324CD004D257F /* NearByDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA502D2E260324CD004D257F /* NearByDetailList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +19,9 @@
 		DA502C9626020954004D257F /* iRoomFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iRoomFramework.h; sourceTree = "<group>"; };
 		DA502C9726020954004D257F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA502C9F260209BB004D257F /* RoomChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomChecker.swift; sourceTree = "<group>"; };
+		DA502D0C260320C8004D257F /* Chat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chat; sourceTree = "<group>"; };
+		DA502D11260321A7004D257F /* PropertyDraftPreview */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PropertyDraftPreview; sourceTree = "<group>"; };
+		DA502D2E260324CD004D257F /* NearByDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByDetailList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +54,46 @@
 		DA502C9526020954004D257F /* iRoomFramework */ = {
 			isa = PBXGroup;
 			children = (
+				DA502D0B26032081004D257F /* Model */,
 				DA502C9626020954004D257F /* iRoomFramework.h */,
 				DA502C9726020954004D257F /* Info.plist */,
 				DA502C9F260209BB004D257F /* RoomChecker.swift */,
 			);
 			path = iRoomFramework;
+			sourceTree = "<group>";
+		};
+		DA502D0B26032081004D257F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA502D1026032174004D257F /* Advertiser */,
+				DA502D0F26032169004D257F /* User */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA502D0F26032169004D257F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DA502D2D260324AA004D257F /* NearBySearch */,
+				DA502D0C260320C8004D257F /* Chat */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DA502D1026032174004D257F /* Advertiser */ = {
+			isa = PBXGroup;
+			children = (
+				DA502D11260321A7004D257F /* PropertyDraftPreview */,
+			);
+			path = Advertiser;
+			sourceTree = "<group>";
+		};
+		DA502D2D260324AA004D257F /* NearBySearch */ = {
+			isa = PBXGroup;
+			children = (
+				DA502D2E260324CD004D257F /* NearByDetailList.swift */,
+			);
+			path = NearBySearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +165,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA502D12260321A7004D257F /* PropertyDraftPreview in Resources */,
+				DA502D0D260320C8004D257F /* Chat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA502CA0260209BB004D257F /* RoomChecker.swift in Sources */,
+				DA502D2F260324CD004D257F /* NearByDetailList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = my.ibilikstarproperty.iRoomFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = my.ibilikstarproperty.iRoomFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

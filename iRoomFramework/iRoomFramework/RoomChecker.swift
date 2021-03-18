@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-class RoomChecker {
+public class RoomChecker {
 	
 	private init() {}
 	

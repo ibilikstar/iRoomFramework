@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
 
   spec.source       = { :git => "https://ibilikstar@github.com/ibilikstar/iRoomFramework.git", :tag => "0.0.1" }
-  spec.source_files  = "**/*{.h,.swift}"
+  spec.source_files  = "iRoomFramework/**/*{.h,.swift}"
   spec.swift_version = '5.0'
 end

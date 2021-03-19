@@ -9,8 +9,8 @@
 import Foundation
 
 public struct ProDraftPreviewFacilities : Codable {
-    let value : String?
-    let mobile_image : String?
+	public let value : String?
+	public let mobile_image : String?
     
     enum CodingKeys: String, CodingKey {
         

@@ -3,34 +3,34 @@ import Foundation
 
 public struct PropertyDraftPreviewData : Codable {
     
-    let id : Int?
-    let user_id : Int?
-    let listing_type : String?
-    let property_status : String?
-    let property_type : String?
-    let land_title : String?
-    let build_up : Int?
-    let land_area : Int?
-    let bedroom : Int?
-    let bathroom : Int?
-    let car_park : Int?
-    let property_id : Int?
-    let facilities : [ProDraftPreviewFacilities]?
-    let keywords : String?
-    let build_up_wformat : String?
-    let psf : String?
-    let pricing : String?
-    let shoutout : String?
-    let package : String?
-    let verification : String?
-    let photo : [String]?
-    let cover_photo : String?
-    let property_gallery : [String]?
-    let location : ProDraftPreviewLocation?
-    let about_property : ProDraftPreviewAboutProperty?
-	let nearby_amenities : [NearByDetailList]?
-	let top_performance_ads : ProDraftPreviewTopPerformanceAds?
-	let top_performing_listings : [ProDraftPreviewTopPerformingListings]?
+	public let id : Int?
+	public let user_id : Int?
+	public let listing_type : String?
+	public let property_status : String?
+	public let property_type : String?
+	public let land_title : String?
+	public let build_up : Int?
+	public let land_area : Int?
+	public let bedroom : Int?
+	public let bathroom : Int?
+	public let car_park : Int?
+	public let property_id : Int?
+	public let facilities : [ProDraftPreviewFacilities]?
+	public let keywords : String?
+	public let build_up_wformat : String?
+	public let psf : String?
+	public let pricing : String?
+	public let shoutout : String?
+	public let package : String?
+	public let verification : String?
+	public let photo : [String]?
+	public let cover_photo : String?
+	public let property_gallery : [String]?
+	public let location : ProDraftPreviewLocation?
+	public let about_property : ProDraftPreviewAboutProperty?
+	public let nearby_amenities : [NearByDetailList]?
+	public let top_performance_ads : ProDraftPreviewTopPerformanceAds?
+	public let top_performing_listings : [ProDraftPreviewTopPerformingListings]?
 
 	enum CodingKeys: String, CodingKey {
 

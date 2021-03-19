@@ -2,13 +2,13 @@
 import Foundation
 
 public struct ProDraftPreviewTopPerformingListings : Codable {
-	let property_id : Int?
-	let property_name : String?
-	let pricing : String?
-	let photo : String?
-	let location : String?
-	let agent : String?
-	let developer : String?
+	public let property_id : Int?
+	public let property_name : String?
+	public let pricing : String?
+	public let photo : String?
+	public let location : String?
+	public let agent : String?
+	public let developer : String?
 
 	enum CodingKeys: String, CodingKey {
 

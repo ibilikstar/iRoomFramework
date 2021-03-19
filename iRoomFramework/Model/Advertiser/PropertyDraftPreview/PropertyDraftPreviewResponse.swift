@@ -3,9 +3,9 @@
 import Foundation
 
 public struct PropertyDraftPreviewResponse : Codable {
-	let status : Bool?
-	let message : String?
-	let data : PropertyDraftPreviewData?
+	public let status : Bool?
+	public let message : String?
+	public let data : PropertyDraftPreviewData?
 
 	enum CodingKeys: String, CodingKey {
 

@@ -9,7 +9,7 @@
 import Foundation
 
 public struct ChatStatusData : Codable {
-	let groupId : String?
+	public let groupId : String?
 	
 	enum CodingKeys: String, CodingKey {
 		case groupId = "group_chat_id"

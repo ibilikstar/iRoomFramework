@@ -10,10 +10,10 @@ import Foundation
 
 public struct ChatListResponse : Codable {
 	
-	let status : Bool?
-	let message: String?
-	let totalCount: Int?
-	let data : [ChatListInfoData]?
+	public let status : Bool?
+	public let message: String?
+	public let totalCount: Int?
+	public let data : [ChatListInfoData]?
 	
 	enum CodingKeys: String, CodingKey {
 		case status = "status"

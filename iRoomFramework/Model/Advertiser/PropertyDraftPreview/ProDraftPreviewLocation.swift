@@ -2,12 +2,12 @@
 import Foundation
 
 public struct ProDraftPreviewLocation : Codable {
-	let location_state : String?
-	let parent : String?
-	let area : String?
-	let postal_code : String?
-	let lat : String?
-	let lng : String?
+	public let location_state : String?
+	public let parent : String?
+	public let area : String?
+	public let postal_code : String?
+	public let lat : String?
+	public let lng : String?
 
 	enum CodingKeys: String, CodingKey {
 

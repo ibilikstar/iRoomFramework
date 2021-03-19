@@ -3,9 +3,9 @@
 import Foundation
 
 public struct ProDraftPreviewTopPerformanceAds : Codable {
-	let location : String?
-	let type : String?
-	let price_range : String?
+	public let location : String?
+	public let type : String?
+	public let price_range : String?
 
 	enum CodingKeys: String, CodingKey {
 

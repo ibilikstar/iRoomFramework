@@ -2,11 +2,11 @@
 import Foundation
 
 public struct ProDraftPreviewAboutProperty : Codable {
-	let property_name : String?
-	let property_type : String?
-	let land_title : String?
-	let total_units : String?
-	let developer : String?
+	public let property_name : String?
+	public let property_type : String?
+	public let land_title : String?
+	public let total_units : String?
+	public let developer : String?
 
 	enum CodingKeys: String, CodingKey {
 

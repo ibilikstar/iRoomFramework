@@ -10,18 +10,18 @@ import Foundation
 
 public struct ChatInfoData : Codable {
 	
-	let propertyId : Int?
-	let propertyName : String?
-	let propertyImage: String?
-	let agentId: Int?
-	let agentName: String?
-	let agentEmail: String?
-	let agentAvatar: String?
-	let userId: Int?
-	let userName: String?
-	let userEmail: String?
-	let userAvatar: String?
-    let roomType : String?
+	public let propertyId : Int?
+	public let propertyName : String?
+	public let propertyImage: String?
+	public let agentId: Int?
+	public let agentName: String?
+	public let agentEmail: String?
+	public let agentAvatar: String?
+	public let userId: Int?
+	public let userName: String?
+	public let userEmail: String?
+	public let userAvatar: String?
+	public let roomType : String?
     
 	enum CodingKeys: String, CodingKey {
 		case propertyId = "room_id" // previously it was property_id

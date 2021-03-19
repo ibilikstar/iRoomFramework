@@ -4,13 +4,13 @@ import Foundation
 
 public struct ProDraftPreviewNearbyAmenities : Codable {
     
-	let name : String?
-	let location_state : String?
-	let area : String?
-	let lat : String?
-	let lng : String?
-	let type : String?
-	let distance : Double?
+	public let name : String?
+	public let location_state : String?
+	public let area : String?
+	public let lat : String?
+	public let lng : String?
+	public let type : String?
+	public let distance : Double?
     
 	enum CodingKeys: String, CodingKey {
 

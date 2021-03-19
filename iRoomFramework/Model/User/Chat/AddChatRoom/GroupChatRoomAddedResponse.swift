@@ -9,9 +9,9 @@ import Foundation
 
 public struct GroupChatRoomAddedResponse : Codable {
 	
-	let status : Bool?
-	let message: String?
-	let data: String?
+	public let status : Bool?
+	public let message: String?
+	public let data: String?
 	
 	enum CodingKeys: String, CodingKey {
 		case status = "status"
